@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  redis-clone:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-p", "8080", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+
+volumes:
+  redis-data: 
