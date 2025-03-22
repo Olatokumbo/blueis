@@ -24,7 +24,7 @@ Blueis is a lightweight Redis clone written in Go. It implements the Redis Seria
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/blueis.git
+git clone https://github.com/Olatokumbo/blueis.git
 cd blueis
 ```
 
